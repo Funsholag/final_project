@@ -1,0 +1,15 @@
+<%= form_tag("http://www.zillow.com/webservice/GetSearchResults.htm?", :method => "get") do %>
+  <%= text_field_tag(:'zws-id', params[:'zws-id'], class: "form-control", placeholder: "Address (e.g 123 Example Street, City, State)", style: "width: 50%")%> <br />
+  <%= text_field_tag(:address, params[:address], class: "form-control", placeholder: "Address (e.g 123 Example Street, City, State)", style: "width: 50%")%> <br />
+  <%= text_field_tag(:citystatezip, params[:citystatezip], class: "form-control", placeholder: "Zip Code", style: "width: 15%") %> <br />
+  <%= submit_tag "Submit", :class => "btn btn-default" %>
+
+<% end %>
+
+<div id="search-results">
+<% @results.each do |result| %>
+<%= render 'results' %>
+
+<% end %>
+</div>
+<!-- <script src="http://www.zillow.com/webservice/GetSearchResults.htm?zws-id='zws_id'"></script> -->

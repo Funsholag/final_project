@@ -1,0 +1,23 @@
+<div class="col2 muted">
+<h4 class="thin">Zestimate®</h4>
+</div><div class="col3">
+<h3>$
+  <%= :zestimate['amount'] %>
+</h3>
+</div>
+<div class="col5">
+  <h4>
+<% if :zestimate['valueChange'].to_i > 0
+ %><%= :'angle-up' %>
+<% else
+ %><%= :'angle-down' %>
+<% end %>
+<%= number_to_currency :zestimate['valueChange'].to_i.abs %>
+</h4>
+</div>
+<div class="clearfix">
+</div>
+<div class="tiny muted">
+  Last updated
+  <%= time_ago_in_words(Date.strptime(:zestimate['last_updated'], "%m/%d/%Y")) rescue :zestimate['last_updated'] %> ago
+</div>

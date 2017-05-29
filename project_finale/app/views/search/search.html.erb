@@ -1,0 +1,18 @@
+<%= render 'form' %>
+
+<% if defined?(@results)%>
+<section class="muted center">Zillow found <%= pluralize @results.count, 'result' %> in about
+  <%= @duration %>s</section>
+<br />
+<div id="search-results">
+<% @results.each do |result| %>
+<%= render 'search_result', result: result %>
+
+<% end %>
+</div>
+<% elsif defined?(@exception)%>
+<section class="center">
+<h2>D'oh!</h2>
+<h2 class="muted thin"><%= ::Temple::Utils.escape_html((@exception.message)) %></h2>
+</section>
+<% end %>

@@ -1,0 +1,14 @@
+<section id="search-form">
+<% _slim_controls1 = form_tag search_path, method: :post, html: { id: 'search-form' } do%>
+<div class="col6">
+  <%= text_field_tag :address, params[:address], placeholder: 'Address' %>
+</div>
+<div class="col4">
+  <%= text_field_tag :citystatezip, params[:citystatezip], placeholder: 'City/State or ZIP Code' %>
+</div>
+<div class="col12">
+  <%= submit_tag 'Search' %>
+</div>
+<% end %>
+<%= _slim_controls1 %>
+</section>
