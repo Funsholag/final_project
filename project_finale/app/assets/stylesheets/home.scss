@@ -5,11 +5,13 @@
 @import "https://fonts.googleapis.com/icon?family=Material+Icons";
 $iron: #dadbdf;
 
-
-.navbar{
+body{
   background-color: $iron;
-
 }
+// .navbar{
+//   background-color: $iron;
+//
+// }
 // form{
 //   bottom: 1500px;
 // }
@@ -110,51 +112,51 @@ $iron: #dadbdf;
 // }
 
 
-#thailand{
-  position: fixed;
-  top: 100%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  // width: auto;
-  // height: auto;
-  z-index: -100;
-  transform: translateX(-50%) translateY(-90.5%);
-  background: url("/architecture-1836070_1920.jpg");
-  background-size: cover;
-  transition: 1s opacity;
-
-}
-@media (min-width: 100px) {
-
-}
-
-@media (min-width: 200px) {
-
-}
-
-@media (min-width: 300px) {
-
-}
-
-@media (max-width: 500px) {
-
-}
-
-@media (min-width: 550px) {
-
-
-}
-
-@media (min-width: 750px) {
-
-}
-
-@media (min-width: 1000px) {
-
-
-}
-
-@media (min-width: 1200px) {
-
-}
+// #thailand{
+//   position: fixed;
+//   top: 100%;
+//   left: 50%;
+//   min-width: 100%;
+//   min-height: 100%;
+//   // width: auto;
+//   // height: auto;
+//   z-index: -100;
+//   transform: translateX(-50%) translateY(-90.5%);
+//   background: url("/architecture-1836070_1920.jpg");
+//   background-size: cover;
+//   transition: 1s opacity;
+//
+// }
+// @media (min-width: 100px) {
+//
+// }
+//
+// @media (min-width: 200px) {
+//
+// }
+//
+// @media (min-width: 300px) {
+//
+// }
+//
+// @media (max-width: 500px) {
+//
+// }
+//
+// @media (min-width: 550px) {
+//
+//
+// }
+//
+// @media (min-width: 750px) {
+//
+// }
+//
+// @media (min-width: 1000px) {
+//
+//
+// }
+//
+// @media (min-width: 1200px) {
+//
+// }

@@ -1,15 +1,21 @@
-<%= form_tag("http://www.zillow.com/webservice/GetSearchResults.htm?", :method => "get") do %>
-  <%= text_field_tag(:'zws-id', params[:'zws-id'], class: "form-control", placeholder: "Address (e.g 123 Example Street, City, State)", style: "width: 50%")%> <br />
-  <%= text_field_tag(:address, params[:address], class: "form-control", placeholder: "Address (e.g 123 Example Street, City, State)", style: "width: 50%")%> <br />
-  <%= text_field_tag(:citystatezip, params[:citystatezip], class: "form-control", placeholder: "Zip Code", style: "width: 15%") %> <br />
-  <%= submit_tag "Submit", :class => "btn btn-default" %>
+<video poster="722675159.mp4" id="722675159.mp4" preload="auto" playsinline autoplay muted loop>
+  <source src="722675159.mp4" type="video/mp4">
+</video>
 
-<% end %>
+  <h2 class= 'propBox'>Get Your Estimate</h2>
+  <div id="zillow-container">
+  <%= form_for @response.body, :url => property_finder_path do |f| %>
+    <div class= 'zwsidContainer'>
+      <%= text_field_tag(:'zws-id', params[:'zws-id'], class: "form-control center responsive", placeholder: "ZWS-ID", style: "width: 50%")%> <br />
+    </div>
+    <div class= "addressContainer">
+      <%= text_field_tag(:address, params[:address], class: "form-control center responsive", placeholder: "Address (e.g 123 Example Street, City, State)", style: "width: 75%")%> <br />
+    </div>
+    <div class= 'zipcodeContainer'>
+      <%= text_field_tag(:citystatezip, params[:citystatezip], class: "form-control center responsive", placeholder: "Zip Code", style: "width: 50%") %> <br />
+    </div>
+    <%= submit_tag "Submit", :class => "btn btn-default hide" %>
+  </div>
 
-<div id="search-results">
-<% @results.each do |result| %>
-<%= render 'results' %>
-
-<% end %>
+  <% end %>
 </div>
-<!-- <script src="http://www.zillow.com/webservice/GetSearchResults.htm?zws-id='zws_id'"></script> -->
