@@ -5,8 +5,80 @@
 @import "https://fonts.googleapis.com/icon?family=Material+Icons";
 $iron: #dadbdf;
 
-body{
-  background-color: $iron;
+#floor{
+  position: fixed;
+  top: 100%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-100%);
+  background: url("/floor-2228277_1920.jpg");
+  background-size: cover;
+  transition: 1s;
+  filter: brightness(65%);
+}
+#red_deer{
+  position: fixed;
+  top: 100%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-100%);
+  background: url("/red-deer-2308515_1920.jpg");
+  background-size: cover;
+  transition: 1s;
+  filter: brightness(65%);
+}
+#thailand{
+  position: fixed;
+  top: 120%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-100%);
+  background: url("/architecture-1836070_1920.jpg");
+  background-size: cover;
+  transition: 1s;
+  filter: brightness(65%);
+}
+#residence{
+  position: fixed;
+  top: 100%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-100%);
+  background: url("/residence-2238987_1920.jpg");
+  background-size: cover;
+  transition: 1s;
+  filter: brightness(65%);
+}
+#skyscraper{
+  position: fixed;
+  top: 100%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-100%);
+  background: url("/skyscraper-450793_1920.jpg");
+  background-size: cover;
+  transition: 1s;
+  filter: brightness(65%);
 }
 // .navbar{
 //   background-color: $iron;
