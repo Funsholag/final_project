@@ -9,13 +9,28 @@
     <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Concert+One|Eczar|Ewert|Kavoon|Tillana" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.css">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <script>
+    $( document).ready(function(){
+      $(".button-collapse").sideNav({
+        menuWidth: 180,
+        closeOnClick: true,
+        edge: 'right'
+      });
+    });
+
+    $(document).ready(function(){
+      $('.slider').slider({
+        indicators: false
+      });
+    });
+    </script>
   </head>
 
   <body>
     <header>
-      <div class="navbar-fixed">
-        <nav class="nav-extended N/A transparent">
+      <div class="nav-extended">
+        <nav class= "N/A transparent">
           <div class="nav-wrapper">
             <ul id="dropdown1" class="dropdown-content">
               <li><%= link_to "Home", root_path, :class => "navlink" %></li>
@@ -34,14 +49,14 @@
             </ul>
 
             <ul id="nav-mobile" class="left hide-on-med-and-down">
-              <li><a class="dropdown-button black-text  " href="#" data-activates="dropdown1">
+              <li><a class="dropdown-button white-text" href="#" data-activates="dropdown1">
                 <i class="responsive-image material-icons left">menu</i></a>
               </li>
             </ul>
 
-            <a id="logo" href="/" class="brand-logo center black-text">
+            <a id="logo" href="/" class="brand-logo center">
               <span class="Ajha">Ajka</span>Ile Iye<span class="Ajha">Ajka</span></a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse black-text"><i class="material-icons">menu</i></a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse white-text"><i class="responsive-image material-icons">menu</i></a>
             <ul class="black-text right hide-on-med-and-down">
               <% if user_signed_in? %>
               <li><%= link_to "Edit Profile", edit_user_registration_path, :class => "navlink" %></li>
@@ -65,7 +80,7 @@
     </header>
     <footer>
       <div class="footy">
-        <nav class= "yellow-text N/A transparent">© 2017 Ile Iye</nav>
+        <nav class= "N/A transparent">© 2017 Ile Iye</nav>
       </div>
     </footer>
 
