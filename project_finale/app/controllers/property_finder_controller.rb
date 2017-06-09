@@ -1,8 +1,8 @@
 class PropertyFinderController < ApplicationController
   def index
 
-    api_key=ENV["ZWSID"]
-    @response= HTTParty.get("http://www.zillow.com/webservice/GetSearchResults.htm?zws-id=#{ENV['ZWSID']}",
+    # api_key=ENV["ZWSID"]
+    @response= HTTParty.get("http://www.zillow.com/webservice/GetSearchResults.htm?zws-id=X1-ZWz196vu6dr7rf_3v2ae",
       :query => { :address => params['address'], :citystatezip => params['citystatezip'] })
     puts @response.body
 
@@ -11,7 +11,7 @@ class PropertyFinderController < ApplicationController
   end
 
   def create
-    @response= HTTParty.get("http://www.zillow.com/webservice/GetSearchResults.htm?zws-id=#{ENV['ZWSID']}",
+    @response= HTTParty.get("http://www.zillow.com/webservice/GetSearchResults.htm?zws-id=X1-ZWz196vu6dr7rf_3v2ae",
       :query => { :address => params['address'], :citystatezip => params['citystatezip'] })
     puts @response.body
 

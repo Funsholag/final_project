@@ -36,10 +36,19 @@
           <tr>
             <td><%= result[1]["request"]["address"] %></td>
             <td><%= result[1]["request"]["citystatezip"] %></td>
+            <% if @response == nil %>
+            <% @response.each do |result| %>
+            <td><%= result[1]["response"]["results"]["result"]["zpid"] %></td>
+            <td>$<%= result[1]["response"]["results"]["result"]["zestimate"]["amount"]["#text"] %></td>
+            <td><%= result[1]["response"]["results"]["result"]["zestimate"]["last_updated"] %></td>
+            <% end %>
+            <% else %>
             <td><%= result[1]["response"]["results"]["result"].first["zpid"] %></td>
             <td>$<%= result[1]["response"]["results"]["result"].first["zestimate"]["amount"]["__content__"] %></td>
             <td><%= result[1]["response"]["results"]["result"].first["zestimate"]["last_updated"] %></td>
+            <% end %>
           </tr>
+
           <% end %>
         </tbody>
 

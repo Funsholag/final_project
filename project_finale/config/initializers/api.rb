@@ -1,1 +1,1 @@
-ZWSID = ENV["ZWSID"]
+zwsid = ENV['ZWSID']

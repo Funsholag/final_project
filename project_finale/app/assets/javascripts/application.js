@@ -20,12 +20,6 @@ $(document).ready(function(){
     closeOnClick: true
   });
 });
-// $(document).ready(function(){
-//   $().sideNav({
-//     menuWidth: 350,
-//     closeOnClick: true
-//   });
-// });
 
 $( document ).ready(function(){
   $(".dropdown-button").dropdown({ hover: false});

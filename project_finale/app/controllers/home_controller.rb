@@ -2,7 +2,7 @@ class HomeController < ApplicationController
   def index
     @response= HTTParty.get("http://www.zillow.com/webservice/GetSearchResults.htm?zws-id=#{ENV['ZWSID']}",
       :query => { :address => params['address'], :citystatezip => params['citystatezip'] })
-      puts @response.body
+    puts @response.body
     # @response1= HTTParty.get('http://www.zillow.com/webservice/GetComps.htm?ENV["zwsid"]',
     #   :query => { :address => params['address'], :citystatezip => params['citystatezip'] })
     # puts @response1.body
@@ -14,7 +14,7 @@ class HomeController < ApplicationController
   def create
     @response= HTTParty.get("http://www.zillow.com/webservice/GetSearchResults.htm?zws-id=#{ENV['ZWSID']}",
       :query => { :address => params['address'], :citystatezip => params['citystatezip'] })
-      puts @response.body
+    puts @response.body
 
     # @response1= HTTParty.get('http://www.zillow.com/webservice/GetComps.htm?ENV["zwsid"]',
     #   :query => { :address => params['address'], :citystatezip => params['citystatezip'] })
