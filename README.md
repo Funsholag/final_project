@@ -6,24 +6,19 @@
 This app provides the estimated valuation of property
 
 
-<ul>Features:</ul>
+Features:
 <li>User Log In/Sign Up/Sign Out</li>
 <li>Edit account(change Username, Email, and Password)</li>
 <li>Search function</li>
 
 See it deployed at https://ileiye.herokuapp.com/
 
-Technologies used
-
-•	Ruby on Rails
-
-•	Javascript
-
-•	Materialize
-
-•	Sass
-
-•	Database: SQLite 3 in development and PostgreSQL in production
+<h2>Technologies used</h2>
+<li>Ruby on Rails</li>
+<li>Javascript</li>
+<li>Materialize</li>
+<li>Sass</li>
+<li>Database: SQLite 3 in development and PostgreSQL in production</li>
 
 Gems:
 
