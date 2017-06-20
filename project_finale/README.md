@@ -29,6 +29,7 @@ Technologies used
 •	Database: SQLite 3 in development and PostgreSQL in production
 
 Gems:
+
 •	Devise
 
 •	Httparty
@@ -38,6 +39,7 @@ Gems:
 •	Jquery-turbolinks
 
 APIs:
+
 •	Zillow
 
 •	SendGrid
