@@ -20,15 +20,11 @@ See it deployed at https://ileiye.herokuapp.com/
 <li>Sass</li>
 <li>Database: SQLite 3 in development and PostgreSQL in production</li>
 
-Gems:
-
-•	Devise
-
-•	Httparty
-
-•	Materialize-sass
-
-•	Jquery-turbolinks
+<h2>Gems:</h2>
+<li>Devise</li>
+<li>Httparty</li>
+<li>Materialize-sass</li>
+<li>Jquery-turbolinks</li>
 
 APIs:
 
