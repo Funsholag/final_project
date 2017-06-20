@@ -1,7 +1,7 @@
 Ile Iye
 
-*This is an app intended for those interested in purchasing or selling property.
-*The world of real estate and insurance can be complex, so my intention is to find a way to simplify *this for others.
+*This is an app intended for those interested in purchasing or selling property.*
+*The world of real estate and insurance can be complex, so my intention is to find a way to simplify* *this for others.*
 
 This app provides the estimated valuation of property
 
