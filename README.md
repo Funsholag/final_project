@@ -7,9 +7,9 @@ This app provides the estimated valuation of property
 
 
 Features:
-<ul>User Log In/Sign Up/Sign Out</ul>
-<ul>Edit account(change Username, Email, and Password)</ul>
-<ul>Search function</ul>
+<li>User Log In/Sign Up/Sign Out</li>
+<li>Edit account(change Username, Email, and Password)</li>
+<li>Search function</li>
 
 See it deployed at https://ileiye.herokuapp.com/
 
