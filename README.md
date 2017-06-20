@@ -6,7 +6,7 @@
 This app provides the estimated valuation of property
 
 
-Features:
+<ul>Features:</ul>
 <li>User Log In/Sign Up/Sign Out</li>
 <li>Edit account(change Username, Email, and Password)</li>
 <li>Search function</li>
