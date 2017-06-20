@@ -26,8 +26,6 @@ See it deployed at https://ileiye.herokuapp.com/
 <li>Materialize-sass</li>
 <li>Jquery-turbolinks</li>
 
-APIs:
-
-•	Zillow
-
-•	SendGrid
+<h2>APIs:</h2>
+<li>Zillow</li>
+<li>SendGrid</li>
