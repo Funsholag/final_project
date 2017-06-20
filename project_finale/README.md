@@ -8,37 +8,26 @@ This app provides the estimated valuation of property
 
 Features:
 
-
--User Log In/Sign Up/Sign Out
-
--Edit account(change Username, Email, and Password)
-
--Search function
+•	User Log In/Sign Up/Sign Out
+•	Edit account(change Username, Email, and Password)
+•	Search function
 
 See it deployed at https://ileiye.herokuapp.com/
 
-Technologies used:
+Technologies used
 
--Ruby on Rails
+•	Ruby on Rails
+•	Javascript
+•	Materialize
+•	Sass
+•	Database: SQLite 3 in development and PostgreSQL in production
 
--Javascript
+Gems:
+•	Devise
+•	Httparty
+•	Materialize-sass
+•	Jquery-turbolinks
 
--Materialize
-
--Sass
-
--Database: SQLite 3 in development and PostgreSQL in production
-
-
-Used the following gems:
--Devise
-
--Httparty
-
--Materialize-sass
-
--Jquery-turbolinks
-
-APIs
--Zillow
--SendGrid
+APIs:
+•	Zillow
+•	SendGrid
